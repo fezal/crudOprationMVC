@@ -187,6 +187,10 @@ index.cshtml
     <script>
         $(document).ready(function () {
             debugger
+            LoadData();
+            
+        })
+        function LoadData() {
             var oTable = $('#myDatatable').DataTable({
                 "ajax": {
                     "url": '/home/GetEmployees',
@@ -211,7 +215,7 @@ index.cshtml
                     }
                 ]
             })
-        })
+        }
         $('.tablecontainer').on('click', 'a.popup', function (e) {
             e.preventDefault();
             OpenPopup($(this).attr('href'));
@@ -248,7 +252,8 @@ index.cshtml
                     success: function (data) {
                         if (data.status) {
                             $dialog.dialog('close');
-                            oTable.ajax.reload();
+                            //oTable.ajax.reload();
+                            window.location.reload();
                         }
                     }
                 })

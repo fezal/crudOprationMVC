@@ -109,7 +109,7 @@ namespace MyDatatableCRUD.Controllers
 
 
 
-Employee.cs
+Models/txtended/Employee.cs
 
 
 using System;
@@ -262,7 +262,7 @@ index.cshtml
 
 
 
-Delete.cshtml
+Views/Home/Delete.cshtml
 
 
 @model MyDatatableCRUD.Models.Employee
@@ -301,7 +301,7 @@ Delete.cshtml
 
 
 
-Save.cshtml
+Views/Home/Save.cshtml
 
 
 @model MyDatatableCRUD.Models.Employee
